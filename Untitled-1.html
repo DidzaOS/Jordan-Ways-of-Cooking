@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Jordan Ways of Cooking | Langa Township Dining</title>
+  <meta name="description" content="Jordan Ways of Cooking - authentic South African township cuisine in Langa, Cape Town.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Jordan Ways of Cooking">
+  <meta property="og:description" content="Authentic South African township cuisine in Langa, Cape Town.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jordan Ways of Cooking">
+  <meta name="twitter:description" content="Authentic South African township cuisine in Langa, Cape Town.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #181512;
+      --ink-soft: #4f4740;
+      --paper: #fbf8f2;
+      --paper-deep: #f3ecdf;
+      --white: #ffffff;
+      --smoke: #ebe2d3;
+      --charcoal: #211d19;
+      --clay: #9f3f26;
+      --clay-deep: #762c1b;
+      --olive: #62715a;
+      --gold: #c59a4b;
+      --shadow: 0 24px 70px rgba(35, 27, 20, 0.16);
+      --soft-shadow: 0 18px 44px rgba(35, 27, 20, 0.1);
+      --radius: 8px;
+      --max: 1180px;
+      --sans: "Inter", Arial, sans-serif;
+      --serif: "Playfair Display", Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-width: 320px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      transition: background 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+    }
+
+    .site-header.is-scrolled {
+      background: rgba(24, 21, 18, 0.88);
+      border-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.16);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      width: min(100%, var(--max));
+      min-height: 72px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 5px;
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      transition: color 180ms ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      display: none;
+    }
+
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      padding: 13px 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--clay);
+      color: var(--white);
+      box-shadow: 0 16px 36px rgba(159, 63, 38, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--clay-deep);
+    }
+
+    .btn-light {
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--ink);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.34);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      padding: 118px 20px 42px;
+      color: var(--white);
+      overflow: hidden;
+      display: grid;
+      align-items: end;
+    }
+
+    .hero-image,
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -3;
+      transform: scale(1.04);
+      animation: heroDrift 14s ease-out forwards;
+    }
+
+    .hero::before {
+      content: "";
+      z-index: -2;
+      background:
+        linear-gradient(180deg, rgba(12, 10, 8, 0.68) 0%, rgba(12, 10, 8, 0.18) 42%, rgba(12, 10, 8, 0.78) 100%),
+        linear-gradient(90deg, rgba(12, 10, 8, 0.82) 0%, rgba(12, 10, 8, 0.28) 58%, rgba(12, 10, 8, 0.56) 100%);
+    }
+
+    .hero::after {
+      content: "";
+      z-index: -1;
+      opacity: 0.22;
+      background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    .hero-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: grid;
+      gap: 44px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-copy {
+      max-width: 790px;
+      animation: riseIn 760ms ease both;
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin-top: 20px;
+      font-family: var(--serif);
+      font-size: 3.35rem;
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: #f2d9a9;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .hero-lede {
+      max-width: 620px;
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      animation: riseIn 760ms 160ms ease both;
+    }
+
+    .proof-card {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .proof-card strong {
+      display: block;
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    .proof-card span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    section {
+      padding: 78px 20px;
+    }
+
+    .container {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      margin-bottom: 14px;
+      color: var(--clay);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 2.25rem;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-sub {
+      max-width: 680px;
+      margin-top: 18px;
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .about {
+      background: var(--paper);
+    }
+
+    .about-grid {
+      display: grid;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .about-panel {
+      border-left: 2px solid var(--gold);
+      padding-left: 22px;
+    }
+
+    .signature {
+      margin-top: 28px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .about-image-wrap {
+      position: relative;
+    }
+
+    .about-image {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .floating-note {
+      width: min(88%, 320px);
+      margin: -54px 18px 0 auto;
+      position: relative;
+      border-radius: var(--radius);
+      padding: 18px;
+      background: var(--charcoal);
+      color: var(--white);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .floating-note p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.88rem;
+    }
+
+    .floating-note strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.96rem;
+    }
+
+    .menu {
+      background: var(--white);
+    }
+
+    .section-head {
+      display: grid;
+      gap: 22px;
+      align-items: end;
+      margin-bottom: 36px;
+    }
+
+    .menu-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .menu-card {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid #eee7dc;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 14px 34px rgba(35, 27, 20, 0.07);
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(197, 154, 75, 0.46);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+      transition: transform 420ms ease;
+    }
+
+    .menu-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .menu-content {
+      padding: 24px;
+    }
+
+    .menu-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+      color: var(--clay);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .menu-card h3 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      line-height: 1.1;
+    }
+
+    .menu-card p {
+      margin-top: 12px;
+      color: var(--ink-soft);
+    }
+
+    .experience {
+      background: var(--charcoal);
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .experience-grid {
+      display: grid;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .experience .section-kicker {
+      color: #e4b765;
+    }
+
+    .experience .section-sub {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .feature-item {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .feature-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(197, 154, 75, 0.16);
+      color: #e4b765;
+      font-weight: 800;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .feature-item p {
+      color: rgba(255, 255, 255, 0.67);
+      font-size: 0.94rem;
+    }
+
+    .quote-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .quote-card {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .quote-card p {
+      color: rgba(255, 255, 255, 0.86);
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.45;
+    }
+
+    .quote-card strong {
+      display: block;
+      margin-top: 16px;
+      color: #e4b765;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .visit {
+      background:
+        linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    }
+
+    .visit-card {
+      display: grid;
+      gap: 28px;
+      border-radius: var(--radius);
+      padding: 28px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .visit-details {
+      display: grid;
+      gap: 18px;
+    }
+
+    .detail-block {
+      padding-top: 18px;
+      border-top: 1px solid #eee7dc;
+    }
+
+    .detail-block:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .detail-block span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--clay);
+      font-size: 0.73rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .detail-block p,
+    .detail-block a {
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .reservation-panel {
+      border-radius: var(--radius);
+      padding: 24px;
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .reservation-panel h3 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      line-height: 1.1;
+    }
+
+    .reservation-panel p {
+      margin-top: 14px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .reservation-panel .btn {
+      width: 100%;
+      margin-top: 22px;
+    }
+
+    .social-panel {
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .social-panel span {
+      display: block;
+      margin-bottom: 12px;
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--white);
+      text-decoration: none;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(228, 183, 101, 0.5);
+      background: rgba(228, 183, 101, 0.16);
+    }
+
+    .social-link svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+    }
+
+    .map-card {
+      margin-top: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .map-card iframe {
+      width: 100%;
+      height: 220px;
+      display: block;
+      border: 0;
+      filter: saturate(0.92) contrast(1.03);
+    }
+
+    .map-link {
+      display: block;
+      padding: 12px 14px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+      transition: color 180ms ease, background 180ms ease;
+    }
+
+    .map-link:hover {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+    }
+
+    footer {
+      padding: 34px 20px;
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    footer h2 {
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.35rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 640ms ease, transform 640ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroDrift {
+      from {
+        transform: scale(1.08);
+      }
+      to {
+        transform: scale(1.02);
+      }
+    }
+
+    @media (min-width: 640px) {
+      .hero-actions {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .hero-proof {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .section-head {
+        grid-template-columns: 1fr auto;
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .visit-card {
+        padding: 38px;
+      }
+    }
+
+    @media (min-width: 860px) {
+      .nav-links,
+      .nav-cta {
+        display: flex;
+      }
+
+      .hero {
+        padding-top: 150px;
+      }
+
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        align-items: end;
+      }
+
+      .hero h1 {
+        font-size: 5.6rem;
+      }
+
+      .hero-lede {
+        font-size: 1.16rem;
+      }
+
+      section {
+        padding: 112px 20px;
+      }
+
+      .section-title {
+        font-size: 3.55rem;
+      }
+
+      .section-sub {
+        font-size: 1.08rem;
+      }
+
+      .about-grid,
+      .experience-grid,
+      .visit-card {
+        grid-template-columns: 1fr 0.82fr;
+      }
+
+      .about-image {
+        aspect-ratio: 5 / 6;
+      }
+
+      .visit-card {
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .hero h1 {
+        font-size: 6.6rem;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .hero h1 {
+        font-size: 2.85rem;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .proof-card strong {
+        font-size: 1.35rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 1ms !important;
+        scroll-behavior: auto !important;
+        transition-duration: 1ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#top" class="brand">
+        Jordan Ways
+        <span>of Cooking</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+
+      <a class="btn btn-light nav-cta" href="https://wa.me/27608285835?text=Hello%20Jordan%20Ways%20of%20Cooking,%20I%20would%20like%20to%20reserve%20a%20table.">Reserve</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Jordan Ways of Cooking">
+      <img class="hero-image" src="./assets/homepage.jpeg" alt="A generous South African braai feast">
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Langa Township, Cape Town</p>
+          <h1>Jordan Ways <span>of Cooking</span></h1>
+          <p class="hero-lede">
+            Bold, soulful township cuisine prepared with fire, patience, and deep South African heritage.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/27608285835?text=Hello%20Jordan%20Ways%20of%20Cooking,%20I%20would%20like%20to%20reserve%20a%20table.">Reserve on WhatsApp</a>
+            <a class="btn btn-outline" href="#menu">Explore the Menu</a>
+          </div>
+        </div>
+
+        <div class="hero-proof" aria-label="Restaurant highlights">
+          <div class="proof-card">
+            <strong>11AM</strong>
+            <span>Daily opening</span>
+          </div>
+          <div class="proof-card">
+            <strong>Langa</strong>
+            <span>Township roots</span>
+          </div>
+          <div class="proof-card">
+            <strong>Fresh</strong>
+            <span>Cooked daily</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel reveal">
+          <p class="section-kicker">Rooted in tradition</p>
+          <h2 class="section-title">A refined home for real South African flavour.</h2>
+          <p class="section-sub">
+            In the heart of Langa Township, Chef Ntlalo Jordan has created more than a restaurant. Jordan Ways of Cooking is a warm, generous table where township culinary heritage is treated with craft, pride, and care.
+          </p>
+          <p class="section-sub">
+            Come for slow-cooked classics, smoky braai notes, and the kind of hospitality that turns a meal into a memory.
+          </p>
+          <p class="signature">Chef Ntlalo Jordan</p>
+        </div>
+
+        <div class="about-image-wrap reveal">
+          <img class="about-image" src="./assets/meatplatter.jpeg" alt="Signature grilled meat platter">
+          <div class="floating-note">
+            <strong>Made for guests who want the real Cape Town.</strong>
+            <p>No shortcuts, no fuss - just fire, flavour, and food with a story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">The taste of Langa</p>
+            <h2 class="section-title">Signature dishes, prepared fresh daily.</h2>
+            <p class="section-sub">A focused menu built around comfort, craft, and generous plates made to share.</p>
+          </div>
+          <a class="btn btn-primary" href="#visit">Plan Your Visit</a>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="./assets/umleqwa.jpg" alt="Umleqwa free-range chicken">
+            <div class="menu-content">
+              <div class="menu-meta">
+                <span>House classic</span>
+                <span>Slow cooked</span>
+              </div>
+              <h3>Umleqwa</h3>
+              <p>Free-range chicken slow-cooked until tender, rich, and deeply comforting.</p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal">
+            <img src="./assets/beefstew.jpeg" alt="Hearty beef stew">
+            <div class="menu-content">
+              <div class="menu-meta">
+                <span>Comfort</span>
+                <span>Heritage spice</span>
+              </div>
+              <h3>Hearty Beef Stew</h3>
+              <p>Tender beef simmered with heritage spices and served with soulful depth.</p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal">
+            <img src="./assets/meatplatter.jpeg" alt="Signature meat platter">
+            <div class="menu-content">
+              <div class="menu-meta">
+                <span>For the table</span>
+                <span>Braai flavour</span>
+              </div>
+              <h3>Signature Meat Platter</h3>
+              <p>A generous feast of smoky grilled meats made for sharing and lingering.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container experience-grid">
+        <div class="reveal">
+          <p class="section-kicker">Why guests come back</p>
+          <h2 class="section-title">The polish of a destination restaurant, with the soul of home cooking.</h2>
+          <p class="section-sub">
+            Jordan Ways of Cooking gives visitors a clear, memorable way into South African township dining: warm service, honest dishes, and a setting that feels personal from the first welcome.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-mark">1</div>
+              <div>
+                <strong>Authentic township cuisine</strong>
+                <p>Traditional flavours served with modern care and presentation.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-mark">2</div>
+              <div>
+                <strong>Simple WhatsApp reservations</strong>
+                <p>Book quickly, ask questions, and confirm your visit directly.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-mark">3</div>
+              <div>
+                <strong>Open daily</strong>
+                <p>Lunch, dinner, and relaxed shared meals from 11:00 AM to 10:00 PM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-stack reveal">
+          <div class="quote-card">
+            <p>"The absolute highlight of our Cape Town trip."</p>
+            <strong>Sarah Jenkins</strong>
+          </div>
+          <div class="quote-card">
+            <p>"Authentic, flavorful, and full of soul."</p>
+            <strong>David M.</strong>
+          </div>
+          <div class="quote-card">
+            <p>"The real South African township culinary experience."</p>
+            <strong>Lebo Ndlovu</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="container">
+        <div class="visit-card reveal">
+          <div>
+            <p class="section-kicker">Visit us</p>
+            <h2 class="section-title">Reserve your table in Langa.</h2>
+            <p class="section-sub">
+              We are open every day for guests who want food with presence, warmth, and a true Cape Town story.
+            </p>
+
+            <div class="visit-details">
+              <div class="detail-block">
+                <span>Address</span>
+                <p>546 Washington Street<br>Langa Township, Cape Town<br>South Africa</p>
+              </div>
+              <div class="detail-block">
+                <span>Hours</span>
+                <p>Monday - Sunday<br>11:00 AM - 10:00 PM</p>
+              </div>
+              <div class="detail-block">
+                <span>Phone / WhatsApp</span>
+                <a href="tel:+27608285835">+27 60 828 5835</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="reservation-panel" aria-label="Reservation call to action">
+            <h3>Ready for a soulful meal?</h3>
+            <p>Send a WhatsApp message and we will help you reserve a table.</p>
+            <a class="btn btn-primary" href="https://wa.me/27608285835?text=Hello%20Jordan%20Ways%20of%20Cooking,%20I%20would%20like%20to%20reserve%20a%20table.">Book on WhatsApp</a>
+
+            <div class="social-panel">
+              <span>Follow the kitchen</span>
+              <div class="social-links">
+                <a class="social-link" href="https://www.instagram.com/jordanwaysofcooking/" target="_blank" rel="noopener" aria-label="Visit Jordan Ways of Cooking on Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.55a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.facebook.com/JordanWaysofCooking" target="_blank" rel="noopener" aria-label="Visit Jordan Ways of Cooking on Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14.2 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.29-.04-1.27-.12-2.42-.12-2.4 0-4.04 1.46-4.04 4.15v2.26H8.2V14h2.74v8h3.26Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="map-card" aria-label="Google Map showing Jordan Ways of Cooking location">
+              <iframe
+                title="Map to Jordan Ways of Cooking in Langa, Cape Town"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=546%20Washington%20Street%2C%20Langa%2C%20Cape%20Town%2C%20South%20Africa&output=embed">
+              </iframe>
+              <a class="map-link" href="https://www.google.com/maps/place/Jordan+Ways+of+Cooking/@-33.9436705,18.5234996,607m/data=!3m1!1e3!4m16!1m8!2m7!1sRestaurants!3m5!2s546+Washington+St!3s0x1dcc5b43f31f20c9:0x5fb6b498adef51e4!4m2!1d18.5390951!2d-33.9455562!3m6!1s0x1dcc5bfe7636697f:0xbb6b37385f291978!8m2!3d-33.9436705!4d18.5280057!15sCgtSZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBCnJlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUTNPVFJETFcxM1JSQULgAQD6AQQIABA5!16s%2Fg%2F11hdlpdjy1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+                Open in Google Maps
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <h2>Jordan Ways of Cooking</h2>
+      <p>&copy; 2026 Jordan Ways of Cooking. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector(".site-header");
+    const reveals = document.querySelectorAll(".reveal");
+
+    function updateHeader() {
+      header.classList.toggle("is-scrolled", window.scrollY > 16);
+    }
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.16 });
+
+      reveals.forEach((item) => observer.observe(item));
+    } else {
+      reveals.forEach((item) => item.classList.add("is-visible"));
+    }
+  </script>
+</body>
+</html>
